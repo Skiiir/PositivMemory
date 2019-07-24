@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>HomeForm.ui.qml</file>
+        <file>Page1Form.ui.qml</file>
+        <file>Page2Form.ui.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>RequestInput.qml</file>
+        <file>MainMenu.qml</file>
+        <file>RequestMenu.qml</file>
+        <file>RequestViewALL.qml</file>
+        <file>RequestByArt.qml</file>
+        <file>RequestPeople.qml</file>
+        <file>RequestMorning.qml</file>
+        <file>BasicStructure.qml</file>
+        <file>MenuButtom.qml</file>
+        <file>TextInputLines.qml</file>
+        <file>InputOneEvent.qml</file>
+        <file>BackgroundRectangle.qml</file>
+        <file>OutputLines.qml</file>
+        <file>MemoryTextArea.qml</file>
+    </qresource>
+</RCC>
