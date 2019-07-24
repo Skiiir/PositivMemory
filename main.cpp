@@ -15,6 +15,8 @@
 #include "memorylist.h"
 
 
+
+
 int main(int argc, char *argv[])
 {
 
@@ -36,6 +38,8 @@ int main(int argc, char *argv[])
   //      qmlRegisterSingletonType(resourceUrl, "my.customermodel.singleton", 1, 0, "CustomerModel");
    // engineMemory.
     engineMemory.load(QUrl(QStringLiteral("qrc:/InputOneEvent.qml")));
+
+
 
 
 

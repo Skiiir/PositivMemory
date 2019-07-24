@@ -33,7 +33,9 @@ ApplicationWindow {
         id: bs
         pageType: 1
         titleText:"Random Request"
+
     }
+
 
     Memory {
         id: memory

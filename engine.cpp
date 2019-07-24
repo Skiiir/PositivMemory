@@ -1,5 +1,9 @@
 #include <QDebug>
 #include <QScreen>
+#include <QStandardPaths>
+#include <QFile>
+#include <QFileInfo>
+#include <QDir>
 
 #include "engine.h"
 
@@ -15,7 +19,13 @@ Engine::Engine(const Engine &origin)
 
 }
 
+QString Engine::getFile()
+{
+    QFileInfo info = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation);
 
+    return info.path();
+
+}
 
 
 int Engine::getDisplayHeight()

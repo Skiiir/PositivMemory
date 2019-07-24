@@ -49,10 +49,7 @@ ApplicationWindow {
         id: memoryIF
         visible: false
     }*/
-    RequestInput {
-        id: requestIF
-        visible: false
-    }
+
 
 
 

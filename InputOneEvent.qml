@@ -29,6 +29,7 @@ Engine {
     id: engine
     displayWidth : 1
    displayHeight : 1
+  //  file: ""
 }
        width: engine.displayWidth
        height: engine.displayHeight
@@ -94,10 +95,11 @@ Engine {
 
 
                             y:0
+                            text:  engine.file
 
 
 
-                            placeholderText: "Title"
+                            placeholderText: "title"
 
                             onTextChanged: {
                                 memory.title = text;
