@@ -185,7 +185,7 @@ y:0
 
     // Request Menu Right
     MenuButtom{
-        id: requestMenu
+      //  id: requestMenu
         x: it.width - width
         y: it.height - height
         buttomText: "Output"

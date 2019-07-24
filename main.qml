@@ -53,14 +53,9 @@ ApplicationWindow {
         id: requestIF
         visible: false
     }
-    MainMenu {
-        visible: false
-    }
 
-    Button {
-        text: "memory"
-        onClicked: memoryIF.visible = true
-    }
+
+
     Button {
         x: 30
         text: "request"

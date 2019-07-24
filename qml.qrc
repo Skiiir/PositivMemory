@@ -6,8 +6,6 @@
         <file>Page2Form.ui.qml</file>
         <file>qtquickcontrols2.conf</file>
         <file>RequestInput.qml</file>
-        <file>MainMenu.qml</file>
-        <file>RequestMenu.qml</file>
         <file>RequestViewALL.qml</file>
         <file>RequestByArt.qml</file>
         <file>RequestPeople.qml</file>
