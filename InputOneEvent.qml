@@ -13,7 +13,7 @@ import io.qt.MoodApp.engine 1.0
 ApplicationWindow {
     background: color = bs.pageTypeColor()
     id: window
-
+    property var lineSpacing: 20
 BasicStructure {
     id: bs
   //
@@ -90,7 +90,7 @@ Engine {
 
                     Row {
                         id: titleRow
-                        y:10
+                        y:0
                         x:(engine.displayWidth-titleText.width)/2
                         TextInputLines {
 
@@ -109,7 +109,7 @@ Engine {
                     }
                     Row {
                         id: artRow
-                        y:20 + titleText.height
+                        y:lineSpacing + titleText.height + titleText.y
                         x: (engine.displayWidth - titleText.width)/2
 
                         ComboBox
@@ -150,7 +150,7 @@ Engine {
 
                     Row {
                         id: textRow
-                        y: 30 + titleText.height + artBox.height
+                        y: lineSpacing + artRow.y + artBox.height
                         x: (engine.displayWidth - titleText.width)/2
 
 
@@ -206,7 +206,7 @@ Engine {
                     }
                     Row {
                         id: intensityRow
-                        y: 40 + titleText.height + artBox.height + textText.height
+                        y: lineSpacing + textRow.y + textRow.height
                         x: (engine.displayWidth - titleText.width)/2
                         TextInputLines {
 
@@ -219,7 +219,7 @@ Engine {
                     }
                     Row {
                         id: ownPartRow
-                        y: 50 + intensityText.height + titleText.height + artBox.height + textText.height
+                        y: lineSpacing + intensityRow.y + intensityRow.height
 
                         x: (engine.displayWidth - titleText.width)/2
                         TextInputLines {
@@ -232,7 +232,7 @@ Engine {
                     }
                     Row {
                         id: saveRow
-                        y: 60 + ownPartText.height + intensityText.height + titleText.height + artBox.height + textText.height
+                        y: lineSpacing+  ownPartRow.y + ownPartRow.height
                         x: (window.width - saveToolButtom.width)/2
 
                         Button {

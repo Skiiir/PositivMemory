@@ -43,11 +43,18 @@ HEADERS += \
 DISTFILES += \
     ../build-MoodLifter-Android_f_r_armeabi_v7a_Clang_Qt_5_12_2_for_Android_ARMv7-Profile/android-build/AndroidManifest.xml \
     android/AndroidManifest.xml \
+    android/AndroidManifest.xml \
+    android/build.gradle \
     android/build.gradle \
     android/gradle/wrapper/gradle-wrapper.jar \
+    android/gradle/wrapper/gradle-wrapper.jar \
+    android/gradle/wrapper/gradle-wrapper.properties \
     android/gradle/wrapper/gradle-wrapper.properties \
     android/gradlew \
+    android/gradlew \
     android/gradlew.bat \
+    android/gradlew.bat \
+    android/res/values/libs.xml \
     android/res/values/libs.xml
 
 contains(ANDROID_TARGET_ARCH,arm64-v8a) {

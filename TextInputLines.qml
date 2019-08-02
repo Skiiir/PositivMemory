@@ -33,7 +33,7 @@ TextArea {
         horizontalOffset: -20
         radius: 4
         samples: 9
-        color: "#80000000"
+        color: "#000000"
         verticalOffset: 0
         spread: 0
     }
