@@ -4,5 +4,5 @@ Rectangle {
 color: 	 "#ffffff"
 border.color:   "#00FFFF"
 border.width: 4
-radius: 20
+radius: 30
 }

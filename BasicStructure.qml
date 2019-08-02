@@ -33,7 +33,7 @@ y:0
 
    property int pageType                             // 0- input 1- output
   //)  property var backGroundColor
-    property var inputColor:"#ff7f50"//"#ff7373"
+    property var inputColor: "#fff"//"#ff7f50"//"#ff7373"
     property var outputColor: "#0ac8e3"
 
 

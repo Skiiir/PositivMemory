@@ -4,9 +4,9 @@ import QtQuick.Controls 2.5
 import "."
 import QtQuick.Controls.Styles 1.4
 import io.qt.MoodApp.engine 1.0
-
+import QtGraphicalEffects 1.12
 TextArea {
-  //  property var textColor
+    //  property var textColor
 
     background: BackgroundRectangle {}
     Engine {
@@ -28,8 +28,16 @@ TextArea {
     color: "#000000"// "#FF8C00"//"#00FF00"
     placeholderTextColor : color
     x:(engine.displayWidth-width)/2
-
-
+    Item {
+    DropShadow {
+        horizontalOffset: -20
+        radius: 4
+        samples: 9
+        color: "#80000000"
+        verticalOffset: 0
+        spread: 0
+    }
+    }
     wrapMode: TextEdit.WordWrap
     font.pixelSize: engine.displayHeight / 30
 

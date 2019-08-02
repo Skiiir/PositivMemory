@@ -5,6 +5,7 @@ import "."
 import QtQuick.Controls.Styles 1.4
 import io.qt.MoodApp.memory 1.0
 import io.qt.MoodApp.engine 1.0
+
 //I'm not sure whats exactly is happing here. But with save buttom you should sava all fields in Data
 //At least "title,art,text" should be working. ^^
 //so no comments down here sorry, but perhaps in RequestInput
@@ -93,13 +94,9 @@ Engine {
                         x:(engine.displayWidth-titleText.width)/2
                         TextInputLines {
 
-
                             y:0
-                            text:  engine.file
 
-
-
-                            placeholderText: "title"
+                            placeholderText: "Title"
 
                             onTextChanged: {
                                 memory.title = text;
