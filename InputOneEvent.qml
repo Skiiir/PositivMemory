@@ -1,6 +1,6 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.12
-import QtQuick.Controls 2.5
+//import QtQuick.Controls 2.5
 import "."
 import QtQuick.Controls.Styles 1.4
 import io.qt.MoodApp.memory 1.0
@@ -8,8 +8,7 @@ import io.qt.MoodApp.engine 1.0
 
 //I'm not sure whats exactly is happing here. But with save buttom you should sava all fields in Data
 //At least "title,art,text" should be working. ^^
-//so no comments down here sorry, but perhaps in RequestInput
-// #f0e68c = khaki
+
 ApplicationWindow {
     background: color = bs.pageTypeColor()
     id: window
@@ -115,7 +114,7 @@ Engine {
                         ComboBox
                         {
 
-                            model: ["Familie","Freunde","Hobby","School"]
+                            model: ["Family","Friends","Hobby","School"]
 
 
                             currentIndex: -1
@@ -157,7 +156,7 @@ Engine {
                         TextInputLines {
 
                             id: textText
-                            height: titleText.height *5
+                            height: titleText.height *3
 
                             placeholderText: "Good experience"
                             onTextChanged: {
