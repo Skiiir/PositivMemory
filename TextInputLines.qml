@@ -31,7 +31,7 @@ TextArea {
     Item {
     DropShadow {
         horizontalOffset: -20
-        radius: 4
+        radius: 20
         samples: 9
         color: "#000000"
         verticalOffset: 0

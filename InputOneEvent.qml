@@ -13,7 +13,7 @@ import io.qt.MoodApp.engine 1.0
 ApplicationWindow {
     background: color = bs.pageTypeColor()
     id: window
-    property var lineSpacing: 20
+    property var lineSpacing: engine.displayHeight / 20
 BasicStructure {
     id: bs
   //
