@@ -24,6 +24,10 @@ RESOURCES += qml.qrc
 
 
 
+
+
+
+
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
 
@@ -55,7 +59,25 @@ DISTFILES += \
     android/gradlew.bat \
     android/gradlew.bat \
     android/res/values/libs.xml \
-    android/res/values/libs.xml
+    android/res/values/libs.xml \
+    Calendar/DateUtils.js \
+    Calendar/Datepicker.qmlproject \
+    Calendar/.hg_archival.txt \
+    Calendar/.hgignore \
+    Calendar/Calendar.qml \
+    Calendar/CalendarHeaderModel.qml \
+    Calendar/CalendarModel.qml \
+    Calendar/CalendarStyle.qml \
+    Calendar/Datepicker.qml \
+    Calendar/DateUtils.js \
+    Calendar/Datepicker.qmlproject \
+    Calendar/.hg_archival.txt \
+    Calendar/.hgignore \
+    Calendar/Calendar.qml \
+    Calendar/CalendarHeaderModel.qml \
+    Calendar/CalendarModel.qml \
+    Calendar/CalendarStyle.qml \
+    Calendar/Datepicker.qml
 
 contains(ANDROID_TARGET_ARCH,arm64-v8a) {
     ANDROID_PACKAGE_SOURCE_DIR = \
