@@ -13,18 +13,18 @@ ApplicationWindow {
     background: color = bs.pageTypeColor()
     id: window
     property var lineSpacing: engine.displayHeight / 20
-BasicStructure {
-    id: bs
-  //
+    BasicStructure {
+        id: bs
+      //
 
-   pageType: 0
+       pageType: 0
 
-    titleText:"One Event"
-
-
+        titleText:"One Event"
 
 
-}
+
+
+    }
 Engine {
     id: engine
     displayWidth : 1

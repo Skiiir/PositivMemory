@@ -1,97 +1,82 @@
 import QtQuick 2.9
-import QtQuick.Window 2.0
-import QtQuick.Controls 2.2
+import QtQuick.Controls 2.12
+//import QtQuick.Controls 2.5
 import "."
+import QtQuick.Controls.Styles 1.4
 import io.qt.MoodApp.memory 1.0
-import io.qt.MoodApp.memorylist 1.0
-Item {
+import io.qt.MoodApp.engine 1.0
+import QtQuick.Window 2.2
+//I'm not sure whats exactly is happing here. But with save buttom you should sava all fields in Data
+//At least "title,art,text" should be working. ^^
 
 ApplicationWindow {
-
+  //  background: color = bs.pageTypeColor()
     id: window
+    width: Screen.desktopAvailableWidth * 3
+    height: Screen.desktopAvailableHeight
+    property alias basicStructureWidth: basicStructure.width
     visible: true
-    width: availableWidth
-    height: availableHeight
-    // title: qsTr("Stack")
     onClosing: {
 
-
-
-     //   stackView.push("RequestMenu.qml")
+       // stackView.push("RequestMenu.qml")
         close.accepted = true
-
 
         //window.close()
     }
 
+
+
     Memory {
-        // memory Objekt
+        id: memory
 
-        // Keys.onReturnPressed: console.log("Return key was pressed")
-        id: memory2
-    }
-    //MomoeryList Element. with "load...: " the QList<Memory> Attribute of this Object is getting load.
-    MemoryList {
-        id: memoryList1;
-        load:""
-    }
-    //Buttom back
-    header: ToolBar {
-        contentHeight: toolButton.implicitHeight
-
-        ToolButton {
-            id: toolButton
-            x: -8
-            y: 9
-            text: "back"
-            font.family: "Times New Roman"
-            font.pixelSize: Qt.application.font.pixelSize * 1.6
-            onClicked: {
-                window.close()
-      //          stackView.pushRequestMenunu.qml")
-                drawer.close()
-
-            }
-        }
-
-        Label {
-            //   text: stackView.currentItem.title
-            anchors.centerIn: parent
-        }
-    }
-
-    //uper TextFeld
-    Flickable {
-        id: flickableItem
-        focus: true
 
     }
-
-    TextInput {
-        id: textInput
-        x: 0
-        y: 49
-        width: 400
-        height: 22
-        text: qsTr("Text Input")
-        font.pixelSize: 12
-    }
-
     SwipeView {
         id: swipeView
-        x: -39
-        y: -25
-        width: 200
-        height: 280
-        spacing: 1
-        font.family: "Times New Roman"
+        x: 0
+        y: 0
+        currentIndex: 0
+        anchors.fill: parent
+        width: Screen.desktopAvailableWidth
+        height: Screen.desktopAvailableHeight
+        Item {
+            id: firstPage
+            BasicStructure {
+                id: basicStructure
+                x: 0
+                y: 0
+                width: Screen.desktopAvailableWidth
+                height: Screen.desktopAvailableHeight
+            }
+        }
+        Item {
+            id: secondPage
+
+        }
+        Item {
+            id: thirdPage
+        }
+
+
+
+
+
+
+    }
+    PageIndicator {
+        id: indicator
+
+        count: view.count
+        currentIndex: view.currentIndex
+
+        anchors.bottom: view.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
     }
 }
 
-}
 
 
-/*##^## Designer {
-    D{i:0;autoSize:true;height:480;width:640}
-}
- ##^##*/
+
+
+
+
