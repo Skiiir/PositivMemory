@@ -14,5 +14,6 @@
         <file>MemoryTextArea.qml</file>
         <file>InputDay.qml</file>
         <file>test.qml</file>
+        <file>InputPageBasic.qml</file>
     </qresource>
 </RCC>

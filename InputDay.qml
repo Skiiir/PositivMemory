@@ -1,10 +1,11 @@
-import QtQuick 2.0
+import QtQuick 2.9
 import QtQuick.Window 2.0
 import QtQuick.Controls 2.2
 import "."
 import io.qt.MoodApp.memory 1.0
 import io.qt.MoodApp.memorylist 1.0
 Item {
+
 ApplicationWindow {
 
     id: window
