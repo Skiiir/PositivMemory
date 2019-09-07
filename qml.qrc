@@ -12,5 +12,7 @@
         <file>BackgroundRectangle.qml</file>
         <file>OutputLines.qml</file>
         <file>MemoryTextArea.qml</file>
+        <file>InputDay.qml</file>
+        <file>test.qml</file>
     </qresource>
 </RCC>

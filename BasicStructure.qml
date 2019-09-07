@@ -179,6 +179,11 @@ y:0
         backGroundColor: inputColor
         textColor:inputColor
         borderColor: "black"
+        onClicked: {
+            closeMenu()
+            stackView.push("InputDay.qml")
+            window.close()
+        }
 
 
     }
